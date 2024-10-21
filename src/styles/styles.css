@@ -93,3 +93,37 @@ section {
     align-items: center;
     display: flex;
 }
+
+@media (max-width: 768px) and (min-width: 461px){
+    .elementos {
+        display: block;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .elemento {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 460px){
+    .elementos {
+        display: block;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+
+}
