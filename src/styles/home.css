@@ -307,3 +307,26 @@
     text-align: center;
     color: #f7b500;
 }
+
+#feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback {
+    display: flex;
+   
+    gap: 20px;
+}
+
+.feedback-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-content {
+    max-width: 600px;
+}
