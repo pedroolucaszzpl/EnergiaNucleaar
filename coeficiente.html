@@ -154,40 +154,39 @@
    
 
     <script src="src/javascript/script.js"></script>
+    <div class="footer-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M 0 49 C 150 149 300 -49 600 49 C 900 149 1050 -49 1200 49 V 120 H 0 Z" fill="#ffe39d"></path>
+        </svg>
+    </div>
     <footer class="custom-footer">
         <!-- SVG para a borda superior orgânica -->
-        <div class="footer-wave">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M 0 49 C 150 149 300 -49 600 49 C 900 149 1050 -49 1200 49 V 120 H 0 Z" fill="#ffe39d"></path>
-            </svg>
-        </div>
-
-        <div class="custom-footer-background-circle-1"></div>
-        <div class="custom-footer-background-circle-2"></div>
-
+    
         <div class="custom-footer-content">
+            
+            <div class="custom-footer-section">
+                <h4 class="custom-footer-title">Links Importantes</h4>
+                <ul class="custom-footer-list">
+                    <li><a href="termosdeuso.html" class="custom-footer-link">Termos de Uso e Política de Privacidade</a></li>
+                </ul>
+            </div>
             <div class="custom-footer-section central">
                 <h4 class="custom-footer-title">Contato</h4>
-                <p><strong>SESI CAÇAPAVA</strong><br>
-                    Endereço: Av. Monsenhor Theodomiro Lobo, 100 - Caçapava - SP<br>
+                <p>
+                    <strong>SESI CAÇAPAVA</strong><br>
+                    Av. Monsenhor Theodomiro Lobo, 100 - Caçapava - SP<br>
                     (12) 3653-1943<br>
                     <a href="mailto:contato@sesi.com.br" class="custom-footer-link">contato@sesi.com.br</a>
                 </p>
-                <p><strong>SENAI TAUBATÉ</strong><br>
-                    Endereço: Av. Independência, 846 - Taubaté - SP<br>
+                <p>
+                    <br>
+                    <strong>SENAI TAUBATÉ</strong><br>
+                    Av. Independência, 846 - Taubaté - SP<br>
                     (12) 3609-5701<br>
                     <a href="mailto:contato@senai.com.br" class="custom-footer-link">contato@senai.com.br</a>
                 </p>
             </div>
-
-            <div class="custom-footer-section">
-                <h4 class="custom-footer-title">Links Importantes</h4>
-                <ul class="custom-footer-list">
-                    <li><a href="#termos-de-uso" class="custom-footer-link">Termos de Uso</a></li>
-                    <li><a href="#politica-de-privacidade" class="custom-footer-link">Política de Privacidade</a></li>
-                </ul>
-            </div>
-
+    
             <div class="custom-footer-section">
                 <h4 class="custom-footer-title">Equipe Desenvolvedora</h4>
                 <ul class="custom-footer-list">
@@ -199,124 +198,87 @@
                 </ul>
             </div>
         </div>
-
-      
+    
+        <div class="custom-footer-copyright">
+            <p>&copy; 2024 SESI CAÇAPAVA e SENAI TAUBATÉ. Todos os direitos reservados.</p>
+        </div>
+    
         <style>
             .custom-footer {
                 background-color: #ffe39d;
                 color: #333;
-                padding: 0 20px 40px 20px;
+                padding: 40px 20px;
                 font-family: 'Roboto', sans-serif;
                 position: relative;
                 overflow: hidden;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             }
-
-            .footer-wave {
-                position: relative;
-                width: 100%;
-                overflow: hidden;
-                line-height: 0;
-            }
+    
 
             .footer-wave svg {
-                position: relative;
                 display: block;
                 width: 100%;
-                height: 100px;
+                height: 80px;
             }
-
-            .custom-footer-background-circle-1,
-            .custom-footer-background-circle-2 {
-                position: absolute;
-                border-radius: 50%;
-                opacity: 0.15;
-            }
-
-            .custom-footer-background-circle-1 {
-                top: -50px;
-                right: -50px;
-                background-color: #f28a1e;
-                width: 200px;
-                height: 200px;
-            }
-
-            .custom-footer-background-circle-2 {
-                bottom: -60px;
-                left: -60px;
-                background-color: #f5c32a;
-                width: 300px;
-                height: 300px;
-            }
-
+    
             .custom-footer-content {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 flex-wrap: wrap;
-                text-align: center;
-                z-index: 1;
-                position: relative;
+                text-align: left;
+                max-width: 1200px;
+                margin: 0 auto;
             }
-
+    
             .custom-footer-section {
+                flex: 1 1 250px;
+                padding: 10px;
                 margin-bottom: 30px;
-                flex: 1 1 300px;
-                padding: 0 10px;
             }
-
-            .custom-footer-section.central {
-                flex-basis: 100%;
-                text-align: center;
-            }
-
+    
             .custom-footer-title {
                 color: #f28a1e;
                 margin-bottom: 10px;
-                font-size: 1.6rem;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+                font-size: 1.4rem;
             }
-
+    
             .custom-footer-list {
-                list-style-type: none;
+                list-style: none;
                 padding: 0;
                 margin: 0;
-                font-size: 1rem;
             }
-
+    
             .custom-footer-list li {
                 margin: 8px 0;
             }
-
+    
             .custom-footer-link {
                 color: #333;
                 text-decoration: none;
-                transition: color 0.3s, transform 0.3s;
+                transition: color 0.3s ease;
             }
-
-            .custom-footer-copyright {
-                text-align: center;
-                margin-top: 30px;
-                border-top: 1px solid #f28a1e;
-                padding-top: 20px;
-                z-index: 1;
-                position: relative;
-            }
-
-            .custom-footer-copyright p {
-                color: #555;
-                font-size: 0.9rem;
-            }
-
+    
             .custom-footer-link:hover {
                 color: #f28a1e;
                 text-decoration: underline;
-                transform: translateY(-2px);
             }
-
+    
+            .custom-footer-copyright {
+                text-align: center;
+                margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px solid #f28a1e;
+                font-size: 0.9rem;
+                color: #555;
+            }
+    
             @media (max-width: 768px) {
                 .custom-footer-content {
                     flex-direction: column;
-                    align-items: center;
+                    text-align: center;
+                }
+    
+                .custom-footer-section {
+                    flex-basis: 100%;
                 }
             }
         </style>
