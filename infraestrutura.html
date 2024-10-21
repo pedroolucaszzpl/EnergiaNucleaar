@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Infraestrutura de Usinas Nucleares</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="src/images/logo.png" alt="Logo da Empresa" width="150" height="50" />
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#infraestrutura">Infraestrutura</a>
+                </li>
+            </ul>
+            <button class="btn-default">Saiba Mais</button>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#infraestrutura">Infraestrutura</a>
+                </li>
+            </ul>
+            <button class="btn-default">Saiba Mais</button>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Seção Home -->
+        <section id="home">
+            <div class="shape">
+                <img src="src/images/usina.png" alt="Usina Nuclear">
+            </div>
+            <div id="cta">
+                <h1 class="title">
+                    A Base da <span>Energia Nuclear</span>
+                </h1>
+                <p class="description">
+                    Descubra como a infraestrutura das usinas nucleares sustenta a produção de energia de forma segura
+                    e eficiente, garantindo um futuro energético sustentável.
+                </p>
+                <div id="cta_buttons">
+                    <a href="#about" class="btn-default">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about">
+            <h2 class="section-title">Sobre Usinas Nucleares</h2>
+            <p>As usinas nucleares são complexos industriais altamente tecnológicos que utilizam a energia gerada pela fissão nuclear para produzir eletricidade. Sua infraestrutura é projetada para garantir segurança máxima e operação contínua, com diversos sistemas de controle e resfriamento.</p>
+            <div class="steps">
+                <div class="step">
+                    <img src="src/images/reator.png" alt="Reator">
+                    <h4>Reator Nuclear</h4>
+                    <p>O coração da usina, onde ocorre a fissão nuclear controlada, liberando grandes quantidades de calor.</p>
+                </div>
+                <div class="step">
+                    <img src="src/images/quimica.png" alt="Turbinas">
+                    <h4>Turbinas e Geradores</h4>
+                    <p>O calor gerado no reator aquece a água, transformando-a em vapor que movimenta grandes turbinas, gerando eletricidade.</p>
+                </div>
+                <div class="step">
+                    <img src="src/images/eletric.png" alt="Sistema de Resfriamento">
+                    <h4>Sistema de Resfriamento</h4>
+                    <p>Essencial para manter o reator em temperaturas seguras, evitando superaquecimento e garantindo o ciclo contínuo de produção.</p>
+                </div>
+                <div class="step">
+                    <img src="src/images/residuo.png" alt="Armazenamento de Resíduos">
+                    <h4>Armazenamento de Resíduos</h4>
+                    <p>Os resíduos radioativos gerados são armazenados com rigorosos protocolos de segurança, protegendo o meio ambiente e a saúde pública.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Depoimentos -->
+        <section id="testimonials">
+            <img src="src/images/engenheiro.png" id="testimonial_image" alt="Engenheiro" width="250" height="250">
+            <div id="testimonials_content">
+                <h2 class="section-title">Depoimentos</h2>
+                <h3 class="section-subtitle">O que os especialistas dizem</h3>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <p>João da Silva</p>
+                        <p>"A infraestrutura das usinas nucleares é extremamente robusta e projetada para garantir a máxima segurança e eficiência na geração de energia."</p>
+                    </div>
+                    <div class="feedback">
+                        <p>Maria de Souza</p>
+                        <p>"Cada componente da usina nuclear é cuidadosamente planejado para operar de forma integrada, oferecendo uma solução estável para a geração de energia em larga escala."</p>
+                    </div>
+                </div>
+                <button class="btn-default">Ver mais depoimentos</button>
+            </div>
+        </section>
+
+        <!-- Seção Infraestrutura -->
+        <section id="infraestrutura" class="infraestrutura">
+            <h2>Componentes de uma Usina Nuclear</h2>
+            <div class="elementos">
+                <div class="elemento">
+                    <img src="src/images/energia.png" alt="Reator">
+                    <h3>Reator Nuclear</h3>
+                    <p>O reator é o principal componente da usina, responsável por iniciar o processo de fissão e gerar o calor necessário para produção de eletricidade.</p>
+                </div>
+                <div class="elemento">
+                    <img src="src/images/gases.png" alt="Turbinas">
+                    <h3>Turbinas e Geradores</h3>
+                    <p>Movidos pelo vapor produzido no reator, as turbinas convertem energia térmica em energia mecânica, que os geradores transformam em energia elétrica.</p>
+                </div>
+                <div class="elemento">
+                    <img src="src/images/seg.png" alt="Sistema de Resfriamento">
+                    <h3>Sistemas de Resfriamento</h3>
+                    <p>Essenciais para controlar a temperatura do reator, os sistemas de resfriamento previnem sobrecargas e mantém o funcionamento seguro da usina.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Impactos Ambientais -->
+        <section class="nuclear-energy">
+            <h2>Segurança e Manutenção</h2>
+            <p>A infraestrutura de uma usina nuclear envolve uma série de protocolos rigorosos de segurança e manutenção preventiva para garantir a integridade do sistema e minimizar os riscos.</p>
+            <div class="impacts">
+                <div class="impact">
+                    <span>🔒</span>
+                    <h4>Sistemas de Proteção</h4>
+                    <p>Múltiplas camadas de segurança e barreiras físicas protegem o reator e controlam o material radioativo.</p>
+                </div>
+                <div class="impact">
+                    <span>🛠️</span>
+                    <h4>Manutenção Regular</h4>
+                    <p>Inspeções constantes e manutenção preventiva garantem o funcionamento contínuo e seguro da usina.</p>
+                </div>
+                <div class="impact">
+                    <span>⚠️</span>
+                    <h4>Controle de Emergências</h4>
+                    <p>Sistemas automáticos de desligamento são ativados em caso de emergência, garantindo a proteção da usina e de seu entorno.</p>
+                </div>
+                <div class="impact">
+                    <span>👷‍♂️</span>
+                    <h4>Equipe Altamente Treinada</h4>
+                    <p>Os profissionais responsáveis pela operação das usinas nucleares passam por treinamentos constantes para lidar com qualquer eventualidade.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="custom-footer">
+        <!-- SVG para a borda superior orgânica -->
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M 0 49 C 150 149 300 -49 600 49 C 900 149 1050 -49 1200 49 V 120 H 0 Z" fill="#ffe39d"></path>
+            </svg>
+        </div>
+
+        <div class="custom-footer-background-circle-1"></div>
+        <div class="custom-footer-background-circle-2"></div>
+
+        <div class="custom-footer-content">
+            <div class="custom-footer-section central">
+                <h4 class="custom-footer-title">Contato</h4>
+                <p><strong>SESI CAÇAPAVA</strong><br>
+                    Endereço: Av. Monsenhor Theodomiro Lobo, 100 - Caçapava - SP<br>
+                    (12) 3653-1943<br>
+                    <a href="mailto:contato@sesi.com.br" class="custom-footer-link">contato@sesi.com.br</a>
+                </p>
+                <p><strong>SENAI TAUBATÉ</strong><br>
+                    Endereço: Av. Independência, 846 - Taubaté - SP<br>
+                    (12) 3609-5701<br>
+                    <a href="mailto:contato@senai.com.br" class="custom-footer-link">contato@senai.com.br</a>
+                </p>
+            </div>
+
+            <div class="custom-footer-section">
+                <h4 class="custom-footer-title">Links Importantes</h4>
+                <ul class="custom-footer-list">
+                    <li><a href="#termos-de-uso" class="custom-footer-link">Termos de Uso</a></li>
+                    <li><a href="#politica-de-privacidade" class="custom-footer-link">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="custom-footer-section">
+                <h4 class="custom-footer-title">Equipe Desenvolvedora</h4>
+                <ul class="custom-footer-list">
+                    <li>Bruna Cecília</li>
+                    <li>Emilly Vilela</li>
+                    <li>Pedro Lucas</li>
+                    <li>Taina Menegatti</li>
+                    <li>Vitória Karoline</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="custom-footer-copyright">
+            <p>&copy; 2024 SESI CAÇAPAVA e SENAI TAUBATÉ. Todos os direitos reservados.</p>
+        </div>
+
+        <style>
+            .custom-footer {
+                background-color: #ffe39d;
+                color: #333;
+                padding: 0 20px 40px 20px;
+                font-family: 'Roboto', sans-serif;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .footer-wave {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+            }
+
+            .footer-wave svg {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100px;
+            }
+
+            .custom-footer-background-circle-1,
+            .custom-footer-background-circle-2 {
+                position: absolute;
+                border-radius: 50%;
+                opacity: 0.15;
+            }
+
+            .custom-footer-background-circle-1 {
+                top: -50px;
+                right: -50px;
+                background-color: #f28a1e;
+                width: 200px;
+                height: 200px;
+            }
+
+            .custom-footer-background-circle-2 {
+                bottom: -60px;
+                left: -60px;
+                background-color: #f5c32a;
+                width: 300px;
+                height: 300px;
+            }
+
+            .custom-footer-content {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                text-align: center;
+                z-index: 1;
+                position: relative;
+            }
+
+            .custom-footer-section {
+                margin-bottom: 30px;
+                flex: 1 1 300px;
+                padding: 0 10px;
+            }
+
+            .custom-footer-section.central {
+                flex-basis: 100%;
+                text-align: center;
+            }
+
+            .custom-footer-title {
+                color: #f28a1e;
+                margin-bottom: 10px;
+                font-size: 1.6rem;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            }
+
+            .custom-footer-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+            }
+
+            .custom-footer-list li {
+                margin: 8px 0;
+            }
+
+            .custom-footer-link {
+                color: #333;
+                text-decoration: none;
+                transition: color 0.3s, transform 0.3s;
+            }
+
+            .custom-footer-copyright {
+                text-align: center;
+                margin-top: 30px;
+                border-top: 1px solid #f28a1e;
+                padding-top: 20px;
+                z-index: 1;
+                position: relative;
+            }
+
+            .custom-footer-copyright p {
+                color: #555;
+                font-size: 0.9rem;
+            }
+
+            .custom-footer-link:hover {
+                color: #f28a1e;
+                text-decoration: underline;
+                transform: translateY(-2px);
+            }
+
+            @media (max-width: 768px) {
+                .custom-footer-content {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
