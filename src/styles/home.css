@@ -142,10 +142,12 @@
 }
 
 .step {
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #33a755;
     border-radius: 15px;
     padding: 20px;
-    width: 250px;
+    width: 1500px;
     text-align: center;
     color: white;
 }
@@ -162,7 +164,7 @@
 }
 
 .step p {
-    font-size: 16px;
+    font-size: 18px;
 }
 .nuclear-energy {
     text-align: center;
