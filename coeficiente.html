@@ -16,36 +16,24 @@
         <nav id="navbar">
             <img src="src/images/logo.png" alt="Logo da Empresa" width="150" height="50" />
             <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="index.html">Início</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="coeficiente.html">Coeficiente</a>
-                </li>
-                <li class="nav-item">
-                    <a href="energia.html">Energia</a>
-                </li>
-                <li class="nav-item">
-                    <a href="infraestrutura.html">Infraestrutura</a>
-                </li>
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item active"><a href="coeficiente.html">Coeficiente</a></li>
+                <li class="nav-item"><a href="energia.html">Energia</a></li>
+                <li class="nav-item"><a href="infraestrutura.html">Infraestrutura</a></li>
             </ul>
-            
+            <!-- Botão hambúrguer para menu móvel -->
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
 
+        <!-- Menu móvel -->
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#eficiencia">Coeficiente Energético</a>
-                </li>
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="coeficiente.html">Coeficiente</a></li>
+                <li class="nav-item"><a href="energia.html">Energia</a></li>
+                <li class="nav-item active"><a href="infraestrutura.html">Infraestrutura</a></li>
             </ul>
         </div>
     </header>
@@ -283,7 +271,23 @@
             }
         </style>
     </footer>
+    <script>
+        const mobileBtn = document.getElementById('mobile_btn');
+        const mobileMenu = document.getElementById('mobile_menu');
 
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            mobileBtn.classList.toggle('fa-times'); // Altera o ícone para "X" ao abrir o menu
+        });
+
+        // Fecha o menu quando um item é clicado
+        document.querySelectorAll('#mobile_menu .nav-item a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileBtn.classList.remove('fa-times');
+            });
+        });
+    </script>
 </body>
 
 </html>
