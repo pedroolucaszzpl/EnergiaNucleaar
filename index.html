@@ -46,19 +46,19 @@
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="#index.html">Início</a>
+                    <a href="index.html">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#energia.html">Sobre</a>
+                    <a href="coeficiente.html">Coeficiente</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#infraestrutura">Vantagens</a>
+                    <a href="energia.html">Energia</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="infraestrutura.html">Infraestrutura</a>
                 </li>
             </ul>
-
-            <button class="btn-default">
-                Saiba Mais
-            </button>
+        </div>
         </div>
     </header>
 
@@ -403,7 +403,8 @@
                 }
 
                 #mobile_menu {
-                    display: none; /* Oculto por padrão */
+                    display: none;
+                    /* Oculto por padrão */
                     position: absolute;
                     top: 60px;
                     right: 0;
@@ -412,33 +413,36 @@
                     padding: 15px;
                     border-radius: 8px;
                 }
-                
+
                 #mobile_menu ul {
                     list-style: none;
                     padding: 0;
                 }
-                
+
                 #mobile_menu ul li {
                     margin: 10px 0;
                 }
-                
+
                 #mobile_btn {
                     display: none;
                 }
-                
+
                 @media (max-width: 768px) {
                     #nav_list {
                         display: none;
                     }
+
                     #mobile_btn {
-                        display: block; /* Exibe o hambúrguer em telas menores */
+                        display: block;
+                        /* Exibe o hambúrguer em telas menores */
                     }
                 }
+
                 .shape img {
                     width: 100%;
                     max-width: 100%;
                 }
-                
+
                 .custom-footer {
                     background-color: #ffe39d;
                     color: #333;
