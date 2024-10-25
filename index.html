@@ -45,21 +45,12 @@
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="index.html">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="coeficiente.html">Coeficiente</a>
-                </li>
-                <li class="nav-item">
-                    <a href="energia.html">Energia</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="infraestrutura.html">Infraestrutura</a>
-                </li>
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="coeficiente.html">Coeficiente</a></li>
+                <li class="nav-item"><a href="energia.html">Energia</a></li>
+                <li class="nav-item active"><a href="infraestrutura.html">Infraestrutura</a></li>
             </ul>
-        </div>
-        </div>
+        </div>   
     </header>
 
     <main id="content">
@@ -314,22 +305,9 @@
                         cursor: pointer;
                     }
 
-                    #mobile_menu {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        padding: 20px;
-                        background-color: #f28a1e;
-                    }
+                  
 
-                    #mobile_nav_list {
-                        list-style: none;
-                        padding: 0;
-                    }
-
-                    #mobile_nav_list .nav-item {
-                        margin: 15px 0;
-                    }
+                 
 
                     .shape img {
                         width: 100%;
@@ -403,8 +381,7 @@
                 }
 
                 #mobile_menu {
-                    display: none;
-                    /* Oculto por padrão */
+                    display: none; /* Oculto por padrão */
                     position: absolute;
                     top: 60px;
                     right: 0;
@@ -413,36 +390,61 @@
                     padding: 15px;
                     border-radius: 8px;
                 }
-
+                
                 #mobile_menu ul {
                     list-style: none;
                     padding: 0;
                 }
-
+                
                 #mobile_menu ul li {
                     margin: 10px 0;
                 }
-
+                
                 #mobile_btn {
                     display: none;
                 }
-
+                
                 @media (max-width: 768px) {
                     #nav_list {
                         display: none;
                     }
-
                     #mobile_btn {
-                        display: block;
-                        /* Exibe o hambúrguer em telas menores */
+                        display: block; /* Exibe o hambúrguer em telas menores */
                     }
                 }
-
-                .shape img {
-                    width: 100%;
-                    max-width: 100%;
+                #mobile_menu {
+                    display: none; /* Oculto por padrão */
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                    width: 200px;
+                    background-color: #f28a1e;
+                    padding: 15px;
+                    border-radius: 8px;
                 }
-
+                
+                #mobile_menu ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                
+                #mobile_menu ul li {
+                    margin: 10px 0;
+                }
+                
+                #mobile_btn {
+                    display: none;
+                }
+                
+                @media (max-width: 768px) {
+                    #nav_list {
+                        display: none;
+                    }
+                    #mobile_btn {
+                        display: block; /* Exibe o hambúrguer em telas menores */
+                    }
+                }
+                
                 .custom-footer {
                     background-color: #ffe39d;
                     color: #333;
@@ -522,7 +524,24 @@
                 }
             </style>
         </footer>
-        <script src="src/javascript/script.js"></script>
+        <script>
+            const mobileBtn = document.getElementById('mobile_btn');
+            const mobileMenu = document.getElementById('mobile_menu');
+    
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+                mobileBtn.classList.toggle('fa-times'); // Altera o ícone para "X" ao abrir o menu
+            });
+    
+            // Fecha o menu quando um item é clicado
+            document.querySelectorAll('#mobile_menu .nav-item a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    mobileBtn.classList.remove('fa-times');
+                });
+            });
+        </script>
+        
 </body>
 
 </html>
