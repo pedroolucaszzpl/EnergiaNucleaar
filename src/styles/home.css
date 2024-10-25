@@ -151,6 +151,18 @@
     color: white;                  /* Cor do texto */
     margin-bottom: 20px;           /* Margem inferior para espaçamento entre linhas, se necessário */
 }
+
+.stepp {
+    margin-top: 10px;
+    background-color: #33a755;     /* Cor de fundo do card */
+    border-radius: 15px;           /* Arredondar os cantos do card */
+    padding: 20px;                 /* Espaçamento interno do card */
+    width: 1900px;                  /* Defina uma largura fixa para os cards */
+    text-align: center;            /* Centralizar o texto dentro do card */
+    color: white;                  /* Cor do texto */
+    margin-bottom: 20px;           /* Margem inferior para espaçamento entre linhas, se necessário */
+}
+
 .step img {
     width: 50px;                   /* Largura da imagem */
     height: 50px;                  /* Altura da imagem */
