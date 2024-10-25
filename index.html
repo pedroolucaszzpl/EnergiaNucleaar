@@ -35,22 +35,27 @@
                     <a href="infraestrutura.html">Infraestrutura</a>
                 </li>
             </ul>
-        </nav>
-
-
-        <button id="mobile_btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item"><a href="index.html">Início</a></li>
-                <li class="nav-item"><a href="coeficiente.html">Coeficiente</a></li>
-                <li class="nav-item"><a href="energia.html">Energia</a></li>
-                <li class="nav-item active"><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li class="nav-item active">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="coeficiente.html">Coeficiente</a>
+                </li>
+                <li class="nav-item">
+                    <a href="energia.html">Energia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="infraestrutura.html">Infraestrutura</a>
+                </li>
             </ul>
-        </div>   
+        </div>
     </header>
 
     <main id="content">
@@ -254,8 +259,127 @@
             <div class="custom-footer-copyright">
                 <p>&copy; 2024 SESI CAÇAPAVA e SENAI TAUBATÉ. Todos os direitos reservados.</p>
             </div>
-
             <style>
+                .custom-footer {
+                    background-color: #ffe39d;
+                    color: #333;
+                    padding: 40px 20px;
+                    font-family: 'Roboto', sans-serif;
+                    position: relative;
+                    overflow: hidden;
+                }
+    
+    
+                .footer-wave svg {
+                    display: block;
+                    width: 100%;
+                    height: 80px;
+                }
+    
+                .custom-footer-content {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    text-align: left;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+    
+                .custom-footer-section {
+                    flex: 1 1 250px;
+                    padding: 10px;
+                    margin-bottom: 30px;
+                }
+    
+                .custom-footer-title {
+                    color: #f28a1e;
+                    margin-bottom: 10px;
+                    font-size: 1.4rem;
+                }
+    
+                .custom-footer-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+    
+                .custom-footer-list li {
+                    margin: 8px 0;
+                }
+    
+                .custom-footer-link {
+                    color: #333;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+    
+                .custom-footer-link:hover {
+                    color: #f28a1e;
+                    text-decoration: underline;
+                }
+    
+                .custom-footer-copyright {
+                    text-align: center;
+                    margin-top: 20px;
+                    padding-top: 20px;
+                    border-top: 1px solid #f28a1e;
+                    font-size: 0.9rem;
+                    color: #555;
+                }
+    
+                @media (max-width: 768px) {
+                    .custom-footer-content {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+    
+                    .custom-footer-section {
+                        flex-basis: 100%;
+                    }
+                    .nuclear-energy {
+                        padding: 20px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                
+                    .nuclear-energy h2 {
+                        font-size: 1.5em;
+                        margin-bottom: 15px;
+                    }
+                
+                    .impacts {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                
+                    .impact {
+                        display: flex;
+                        width: 90%;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+                
+                    .impact span {
+                        font-size: 2em;
+                        margin-bottom: 10px;
+                    }
+                
+                    .impact h4 {
+                        font-size: 1.2em;
+                        margin-bottom: 8px;
+                    }
+                
+                    .impact p {
+                        font-size: 1em;
+                        margin: 0 15px;
+                    }
+                }
+            </style>
+            <!-- <style>
                 /* CSS base para tornar o layout responsivo */
                 body {
                     font-family: Arial, sans-serif;
@@ -522,26 +646,9 @@
                         flex-basis: 100%;
                     }
                 }
-            </style>
+            </style> -->
         </footer>
-        <script>
-            const mobileBtn = document.getElementById('mobile_btn');
-            const mobileMenu = document.getElementById('mobile_menu');
-    
-            mobileBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('active');
-                mobileBtn.classList.toggle('fa-times'); // Altera o ícone para "X" ao abrir o menu
-            });
-    
-            // Fecha o menu quando um item é clicado
-            document.querySelectorAll('#mobile_menu .nav-item a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('active');
-                    mobileBtn.classList.remove('fa-times');
-                });
-            });
-        </script>
-        
+        <script src="src/javascript/script.js"></script>        
 </body>
 
 </html>
